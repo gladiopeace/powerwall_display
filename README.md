@@ -1,6 +1,6 @@
 ![alt text](https://github.com/rog0978/powerwall_display/blob/main/display.jpg?raw=true)
-# powerwall_display
-This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / batterz system on a color e-paper display.
+# Tesla Powerwall Desktop Model with e-Paper display
+This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / battery system on a color e-paper display. It gets refreshed every 10 minutes (can be changed of course) - just keep in mind that the display takes about 25 seconds to fully refresh :)
 
 ## Pre-conditions
 
