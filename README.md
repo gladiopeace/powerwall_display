@@ -2,17 +2,18 @@
 # powerwall_display
 This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / batterz system on a color e-paper display.
 
-## Software
-### 1. Pre-conditions
+## Pre-conditions
 
 Besides the material listed below, your powerwall needs to be connected to your local network (Wifi or wired) from which you plan to connect the display to.
 Also, this assumes basic knowledge on how to setup and operate a Raspi Pi (e.g. how to install Raspi OS in a headless way so it can be connected to via SSH)
 
-### 2. Materials used
+## Hardware used
 
 * Display: https://www.waveshare.com/5.65inch-e-paper-module-f.htm
 * Raspberry Pi (I am using a Zero W, but any other version with Wifi connectivity should work): https://www.raspberrypi.com/products/raspberry-pi-zero-w/
 * Black & white acrylic for the case (any source, the svg files provided here are made for 3.8mm thick material, adjust the files for your material if necessary)
+
+## Software setup
 
 ### 3. Set up Raspberry Pi
 
@@ -40,6 +41,6 @@ Use this guide to install necessary (python3) libraries, as well as to get instr
 
 Add the following line at the end of the file and save afterwards: 
 
-## Hardware
+## Creating the Powerwall model
 
 The svg files for laser cutting are in the "case" folder. I also added pdf versions which are true to dimensions (if you material is more or less the same thickness of 3.8mm like the one I used). Measure your material first and then make changes to the svg source files if necessary.
