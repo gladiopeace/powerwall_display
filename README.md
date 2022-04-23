@@ -29,12 +29,12 @@ Use this guide to install necessary (python3) libraries, as well as to get instr
 
 # 6. Clone this repository to your Pi
 
-* $ git clone https://github.com/rog0978/powerwall_display.git
+* `$ git clone https://github.com/rog0978/powerwall_display.git`
 * in powerwall.py, replace the IP address with your IP address assigned to your Pi for variables "urlDetails" & "urlBattery"
-* you can test if everything works by running $sudo ./powerwall.sh
+* you can test if everything works by running `$sudo ./powerwall.sh`
 
 # 7. Set up the display script to run every 10 minutes between 7am and 7pm
 
-$ sudo crontab -e
+`$ sudo crontab -e`
 
 Add the following line at the end of the file and save afterwards: 
