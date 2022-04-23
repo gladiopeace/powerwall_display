@@ -1,3 +1,4 @@
+![alt text](https://github.com/rog0978/powerwall_display/blob/main/display.jpg?raw=true)
 # powerwall_display
 This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / batterz system on a color e-paper display.
 
