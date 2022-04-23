@@ -44,3 +44,4 @@ Add the following line at the end of the file and save afterwards:
 ## Creating the Powerwall model
 
 The svg files for laser cutting are in the "case" folder. I also added pdf versions which are true to dimensions (if you material is more or less the same thickness of 3.8mm like the one I used). Measure your material first and then make changes to the svg source files if necessary.
+For the Tesla logo, I engrave that part and then spray-paint it while the masking tape is still on the Acrylic. Alternatively, painting it with a brush will also work (keeping the masking tape on will drastically simplify this ;-) )
