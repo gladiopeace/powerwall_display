@@ -5,7 +5,7 @@ This is a quick and dirty overview on my model-Powerwall that is displaying stat
 
 ## Pre-conditions
 
-Besides the material listed below, your powerwall needs to be connected to your local network (Wifi or wired) from which you plan to connect the display to.
+Besides the material listed below, your powerwall needs to be connected to your local network (Wifi or wired) from which you plan to connect the display to, and you have to know login / password for the customer login to your Powerwall (Tesla support can help if you don't have this).
 Also, this assumes basic knowledge on how to setup and operate a Raspi Pi (e.g. how to install Raspi OS in a headless way so it can be connected to via SSH)
 
 ## Hardware used
