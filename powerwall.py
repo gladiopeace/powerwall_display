@@ -32,7 +32,6 @@ try:
     gridPower = str(round(powerwallDetails['site']['instant_power']/1000, 2))
     lastUpdate = str(powerwallDetails['site']['last_communication_time'])[5:19].replace("T"," at ")
     batteryPercentage = round((powerwallBattery['percentage']) / 0.95 - 5/0.95)
-    #batteryPercentage = 55.3 
     
     if batteryPercentage >= 50 and batteryPercentage <=75:
       batteryColor = 0x00ffff
@@ -53,18 +52,15 @@ try:
     fontTesla60= ImageFont.truetype(os.path.join(picdir, 'tesla.ttf'), 95)
     
     # logging.info("2.Drawing on the Vertical image...")
-#   Himage = Image.new('RGB', (epd.height, epd.width), 0xffffff)  # 255: clear the frame
     Himage = Image.open(os.path.join(picdir, 'background.bmp')) 
     draw = ImageDraw.Draw(Himage)
-#    draw.text((0, -33), 'tesla', font = fontTesla60, fill = 50)
     draw.text((120, 230), solarpower + ' kW', font = font30, fill = 0)
     draw.text((120, 90), sitePower + ' kW', font = font30, fill = 0)
     draw.text((120, 366), batteryPower + ' kW', font = font30, fill = 0)
     draw.text((120, 500), gridPower + ' kW', font = font30, fill = 0)
     draw.text((52, 12), lastUpdate, font=font31, fill = 0)
-#    draw.text((10, 563 - 498 * batteryPercentage/100), str(batteryPercentage) + '%',  font=font31, fill = 0)
     draw.rectangle((340, 588 - 540 * batteryPercentage/100, 405, 588), fill = batteryColor, outline = 0)
-    Himage = Himage.rotate(180) 
+    Himage = Himage.rotate(180) # might not be needed, depending on how the display is installed in the frame
     epd.display(epd.getbuffer(Himage))
     time.sleep(3)
     
