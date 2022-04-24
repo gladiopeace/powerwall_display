@@ -4,8 +4,8 @@ import sys
 import os
 import json
 import requests
-picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'pic')
-libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'lib')
+picdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pic')
+libdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lib')
 if os.path.exists(libdir):
     sys.path.append(libdir)
 
@@ -23,7 +23,6 @@ try:
     urlBattery = "http://192.168.86.38:8675/soe"
     responseDetails =  requests.get(urlDetails)
     responseBattery =  requests.get(urlBattery)
-    logging.info("epd5in65f Demo")
     powerwallDetails = json.loads(responseDetails.text)
     powerwallBattery = json.loads(responseBattery.text)
     solarpower = str(round(powerwallDetails['solar']['instant_power']/1000, 2))
@@ -49,9 +48,8 @@ try:
     font31 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 31)
     font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
     font30 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 50)
-    fontTesla60= ImageFont.truetype(os.path.join(picdir, 'tesla.ttf'), 95)
     
-    # logging.info("2.Drawing on the Vertical image...")
+    logging.info ("Image path: " + os.path.join(picdir, 'background.bmp'))
     Himage = Image.open(os.path.join(picdir, 'background.bmp')) 
     draw = ImageDraw.Draw(Himage)
     draw.text((120, 230), solarpower + ' kW', font = font30, fill = 0)
@@ -60,7 +58,7 @@ try:
     draw.text((120, 500), gridPower + ' kW', font = font30, fill = 0)
     draw.text((52, 12), lastUpdate, font=font31, fill = 0)
     draw.rectangle((340, 588 - 540 * batteryPercentage/100, 405, 588), fill = batteryColor, outline = 0)
-    Himage = Himage.rotate(180) # might not be needed, depending on how the display is installed in the frame
+    Himage = Himage.rotate(180) 
     epd.display(epd.getbuffer(Himage))
     time.sleep(3)
     
