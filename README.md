@@ -17,27 +17,27 @@ Also, this assumes basic knowledge on how to setup and operate a Raspi Pi (e.g. 
 
 ## Software setup
 
-### 3. Set up Raspberry Pi
+### 1. Set up Raspberry Pi
 
 Install a standard Raspi OS (I am using Raspberry Pi OS lite), there are tons of instructions out there. One of them here: https://www.raspberrypi.com/software/operating-systems/
 
-### 4. Installation of Powerwall Proxy
+### 2. Installation of Powerwall Proxy
 
 Once the basic stuff in installed, install below proxy via docker (manages all requests to the local Powerwall API in a neat and easy way)
 
 https://github.com/jasonacox/pypowerwall/tree/main/proxy
 
-### 5. Installation of e-Paper Display drivers
+### 3. Installation of e-Paper Display drivers
 
 Use this guide to install necessary (python3) libraries, as well as to get instructions on how to connect the display to the Pi: https://www.waveshare.com/wiki/5.65inch_e-Paper_Module_(F)#Hardware_connection
 
-### 6. Clone this repository to your Pi
+### 4. Clone this repository to your Pi
 
 * `$ git clone https://github.com/rog0978/powerwall_display.git`
 * in powerwall.py, replace the IP address with your IP address assigned to your Pi for variables "urlDetails" & "urlBattery"
 * you can test if everything works by running `$sudo ./powerwall.sh`
 
-### 7. Set up the display script to run every 10 minutes between 7am and 7pm
+### 5. Set up the display script to run every 10 minutes between 7am and 7pm
 
 `$ sudo crontab -e`
 
