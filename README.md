@@ -41,9 +41,9 @@ Use this guide to install necessary (python3) libraries, as well as to get instr
 
 `$ sudo crontab -e`
 
-Add the following line at the end of the file and save afterwards: 
+Add the following line at the end of the file and save afterwards (adjust the path to wherever you cloned this repository to): 
 
- `*/10 07-18 * * *  /home/pi/powerwall.sh &`
+ `*/10 07-18 * * *  /home/pi/powerwall_display/powerwall.sh &`
 
 ## Creating the Powerwall model
 
