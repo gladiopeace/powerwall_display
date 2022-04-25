@@ -43,7 +43,7 @@ Use this guide to install necessary (python3) libraries, as well as to get instr
 
 Add the following line at the end of the file and save afterwards (adjust the path to wherever you cloned this repository to): 
 
- `*/10 07-18 * * * sudo /usr/bin/python3 /home/pi/powerwall.py`
+ `*/10 07-18 * * * sudo /usr/bin/python3 /home/pi/powerwall_display/powerwall.py`
 
 ## Creating the Powerwall model
 
