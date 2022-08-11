@@ -16,11 +16,11 @@ from PIL import Image,ImageDraw,ImageFont
 import traceback
 from urllib.request import urlopen
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG) #change log level once happy with how things are going
 
 try:
-    urlDetails = "http://192.168.86.38:8675/aggregates"
-    urlBattery = "http://192.168.86.38:8675/soe"
+    urlDetails = "http://192.168.86.38:8675/aggregates" #change the IP address to your local installation
+    urlBattery = "http://192.168.86.38:8675/soe" #change the IP address to your local installation
     responseDetails =  requests.get(urlDetails)
     responseBattery =  requests.get(urlBattery)
     powerwallDetails = json.loads(responseDetails.text)
@@ -39,10 +39,10 @@ try:
     elif batteryPercentage < 50:
       batteryColor = 0x0000ff
      
-    logging.info(solarpower)
+    #logging.info(solarpower)
     
     epd = epd5in65f.EPD()
-    logging.info("init and Clear")
+    #logging.info("init and Clear")
     epd.init()
     epd.Clear()
     font31 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 31)
