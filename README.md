@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/rog0978/powerwall_display/blob/main/display.jpg?raw=true)
 
-This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / battery system on a color e-paper display. It gets refreshed every 10 minutes (can be changed of course) - just keep in mind that the display takes about 25 seconds to fully refresh :)
+This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / battery system on a color e-paper display. It gets refreshed every 10 minutes (can be changed of course) - just keep in mind that the display takes about 25 seconds to fully refresh!
 
 ## Pre-conditions
 
@@ -49,3 +49,7 @@ Add the following line at the end of the file and save afterwards (adjust the pa
 
 The svg files for laser cutting are in the "case" folder. I also added pdf versions which are true to dimensions (if you material is more or less the same thickness of 3.8mm like the one I used). Measure your material first and then make changes to the svg source files if necessary.
 For the Tesla logo, I engrave that part and then spray-paint it while the masking tape is still on the Acrylic. Alternatively, painting it with a brush will also work (keeping the masking tape on will drastically simplify this ;-) )
+
+## To do
+
+Error handling (e.g. timeout for non-responding Powerwall API) needs to be added once I have some time :)
