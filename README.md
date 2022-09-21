@@ -50,9 +50,9 @@ Add the following line at the end of the file and save afterwards (adjust the pa
 The svg files for laser cutting are in the "case" folder. I also added pdf versions which are true to dimensions (if you material is more or less the same thickness of 3.8mm like the one I used). Measure your material first and then make changes to the svg source files if necessary.
 For the Tesla logo, I engrave that part and then spray-paint it while the masking tape is still on the Acrylic. Alternatively, painting it with a brush will also work (keeping the masking tape on will drastically simplify this ;-) )
 
-## Optional: 3D print a stand for the deisplay
+## Optional: 3D print a stand for the display
 
-I added an STL file that serves as a base. My model has been falling over at times, so I decided to design a stand for it - it has a snug fit, so no glue or anything is required. This adds a great amount of stability!
+I added an STL file in the "case" directoy that serves as a base. My model has been falling over at times, so I decided to design a stand for it - it has a snug fit, so no glue or anything is required. This adds a great amount of stability!
 
 ## To do
 
