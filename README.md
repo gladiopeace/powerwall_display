@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/rog0978/powerwall_display/blob/main/display_image.jpg?raw=true)
 
-This is a quick and dirty overview on my model-Powerwall that is displaying stats of my solar / battery system on a color e-paper display. It gets refreshed every 10 minutes (can be changed of course) - just keep in mind that the display takes about 25 seconds to fully refresh!
+This a repository (code and all required hardware parts for laser cutting and 3D printing) for a model-Powerwall that is displaying stats of my solar / battery system on a color e-paper display. It gets refreshed every 10 minutes (can be changed of course) - just keep in mind that the display takes about 25 seconds to fully refresh!
 
 ## Pre-conditions
 
