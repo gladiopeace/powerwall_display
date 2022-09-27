@@ -14,6 +14,7 @@ Also, this assumes basic knowledge on how to setup and operate a Raspi Pi (e.g. 
 * Display: https://www.waveshare.com/5.65inch-e-paper-module-f.htm
 * Raspberry Pi (I am using a Zero W, but any other version with Wifi connectivity should work): https://www.raspberrypi.com/products/raspberry-pi-zero-w/
 * Black & white acrylic for the case (any source, the svg files provided here are made for 3.8mm thick material, adjust the files for your material if necessary)
+* Any filament for 3D-printing the base
 
 ## Software setup
 
